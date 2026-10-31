@@ -238,6 +238,15 @@ public class Bb implements Serializable {
                     are you tell them the average price of a meal.
                     """;
             this.listeRolesSysteme.add(new SelectItem(role, "Guide touristique"));
+
+
+            role = """
+                    Tu es un coach de révision pour étudiants ingénieurs. À chaque question, réponds toujours en trois parties :
+                    1. Définition : une phrase simple.
+                    2. Analogie : une comparaison avec la vie de tous les jours.
+                    3. Question de contrôle : une question pour vérifier que l'étudiant a compris.
+                    """;
+            this.listeRolesSysteme.add(new SelectItem(role, "Coach de révision"));
         }
 
         return this.listeRolesSysteme;
